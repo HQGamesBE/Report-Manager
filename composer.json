@@ -1,5 +1,5 @@
 {
-    "name": "xxarox/template-for-plugins",
+    "name": "hqgames/report-manager",
     "version": "1.0",
     "license": "LICENSE",
     "config": {
@@ -21,6 +21,10 @@
     "repositories": [
         {
             "type": "vcs",
+            "url":  "git@github.com:HQGamesBE/Protocol.git"
+        },
+        {
+            "type": "vcs",
             "url":  "git@github.com:HQGamesBE/Core.git"
         },
         {
@@ -34,7 +38,8 @@
     ],
     "require": {
         "ext-yaml": "*",
-        "ext-mbstring": "*"
+        "ext-mbstring": "*",
+        "hqgames/protocol": "dev-main"
     },
     "require-dev": {
         "pocketmine/pocketmine-mp": "^4.6",

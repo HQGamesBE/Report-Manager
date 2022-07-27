@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f4a12bee8f598a13fc1b06a8fdeab15",
-    "packages": [],
+    "content-hash": "06aa1b8ecce0b5ffff61f880c16ff8ca",
+    "packages": [
+        {
+            "name": "hqgames/protocol",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:HQGamesBE/Protocol.git",
+                "reference": "02de20a80291d597ae7cc4bb3edd43d879bc9a4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HQGamesBE/Protocol/zipball/02de20a80291d597ae7cc4bb3edd43d879bc9a4e",
+                "reference": "02de20a80291d597ae7cc4bb3edd43d879bc9a4e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-pthreads": "*",
+                "ext-sockets": "*"
+            },
+            "require-dev": {
+                "pocketmine/pocketmine-mp": "^4.6"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HQGames\\": "src/php/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "xxAROX",
+                    "email": "arox.email.0@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/HQGamesBE/Protocol/tree/main",
+                "issues": "https://github.com/HQGamesBE/Protocol/issues"
+            },
+            "time": "2022-07-23T18:22:35+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "adhocore/json-comment",
@@ -332,12 +374,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:HQGamesBE/Core.git",
-                "reference": "02111a66daf8ec8fd368f8fa902a0ff4a3245b2a"
+                "reference": "251dfa09539a7462d2b0a7d3c48a6a1eaf3fa20d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HQGamesBE/Core/zipball/02111a66daf8ec8fd368f8fa902a0ff4a3245b2a",
-                "reference": "02111a66daf8ec8fd368f8fa902a0ff4a3245b2a",
+                "url": "https://api.github.com/repos/HQGamesBE/Core/zipball/251dfa09539a7462d2b0a7d3c48a6a1eaf3fa20d",
+                "reference": "251dfa09539a7462d2b0a7d3c48a6a1eaf3fa20d",
                 "shasum": ""
             },
             "require": {
@@ -353,7 +395,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "HQGames\\Core\\": "src/"
+                    "HQGames\\": "src/"
                 },
                 "files": [
                     "src/functions.php"
@@ -386,7 +428,7 @@
                     "url": "paypal.me/xxarox"
                 }
             ],
-            "time": "2022-07-22T20:24:10+00:00"
+            "time": "2022-07-23T18:12:24+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -3428,6 +3470,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "hqgames/protocol": 20,
         "xxarox/plugin-security": 20,
         "hqgames/core": 20,
         "hqgames/bridge": 20
@@ -3435,7 +3478,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "ext-yaml": "*"
+        "ext-yaml": "*",
+        "ext-mbstring": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
